@@ -11,7 +11,7 @@ The D'BOT Shell is a command-line interpreter that provides a user interface to 
 - mkdir
 - rmdir
 - mv
-- rn
+- rm
 - touch
 - echo
 - cat

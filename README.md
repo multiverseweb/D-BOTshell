@@ -13,8 +13,10 @@ The D'BOT Shell is a command-line interpreter that provides a user interface to 
 - mv
 - rn
 - touch
+- echo
 - cat
-- PWD
+- pwd
+- exit
 
 ### Preview
 

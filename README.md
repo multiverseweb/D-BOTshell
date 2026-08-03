@@ -12,14 +12,64 @@ Designed and developed by [Tejas Gupta](https://github.com/multiverseweb), [Ojas
 - whoami                                        - exit
 ```
 
+## Shell Architecture
+
+```mermaid
+flowchart TD
+    subgraph User Prompt
+        Input[User Prompt Input]
+    end
+
+    subgraph Command Interpreter Engine
+        Tokenizer[Command Tokenizer & Lexer]
+        Evaluator[Command Evaluator]
+        BuiltIn{Is Built-in Command?}
+        SystemExec[OS Process Executor - Win32 API]
+    end
+
+    subgraph Built-in Handlers
+        FileOps[File & Directory Manager: ls, mkdir, touch, rm]
+        StreamOps[Stream Manager: cat, echo, wc, cp, mv]
+        SysOps[System Info: pwd, date, whoami]
+    end
+
+    Input --> Tokenizer
+    Tokenizer --> Evaluator
+    Evaluator --> BuiltIn
+    BuiltIn -- Yes --> FileOps
+    BuiltIn -- Yes --> StreamOps
+    BuiltIn -- Yes --> SysOps
+    BuiltIn -- No --> SystemExec
+```
+
 ## Get BananaShell?
 
 | [Download](https://github.com/multiverseweb/BananaShell/raw/refs/heads/main/BananaShell.exe) |
 |-|
 
+## Compilation & Setup
+
+### Using Pre-compiled Executable
+1. Download `BananaShell.exe` from the release link above.
+2. Run `BananaShell.exe` in your terminal or Command Prompt.
+
+### Compiling from Source Code (`BananaShell.c`)
+
+#### Prerequisites
+- Windows OS
+- GCC / MinGW compiler or MSVC (`cl.exe`)
+
+#### Build Commands
+```bash
+# GCC (MinGW)
+gcc BananaShell.c -o BananaShell.exe
+
+# Run Shell
+./BananaShell.exe
+```
+
 ## Preview
 
 ![](https://raw.githubusercontent.com/multiverseweb/BananaShell/refs/heads/main/banana.png)
-
 
 ---

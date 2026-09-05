@@ -1,7 +1,7 @@
 # BananaShell
 ##### :octocat: 21-09-2025
 
-Designed and developed by [Tejas Gupta](https://github.com/multiverseweb), [Ojas Gupta](https://github.com/ojas-git) and [Dev Jain](https://github.com/devvv180) the Banana Shell is a command-line interpreter that provides a user interface to interact with the operating system. It is a program that takes commands from the user and executes them. The shell also provides a variety of features to help users interact with the operating system, such as file and directory management, data manipulation, etc. . Some of the commands supported by this software are:
+Designed and developed by [Tejas Gupta](https://github.com/tjiuce), [Ojas Gupta](https://github.com/ojas-git) and [Dev Jain](https://github.com/devvv180) the Banana Shell is a command-line interpreter that provides a user interface to interact with the operating system. It is a program that takes commands from the user and executes them. The shell also provides a variety of features to help users interact with the operating system, such as file and directory management, data manipulation, etc. . Some of the commands supported by this software are:
 ```
 - ls                                            - pwd
 - mkdir dir_name                                - touch file_name
@@ -44,7 +44,7 @@ flowchart TD
 
 ## Get BananaShell?
 
-| [Download](https://github.com/multiverseweb/BananaShell/raw/refs/heads/main/BananaShell.exe) |
+| [Download](https://github.com/tjiuce/BananaShell/raw/refs/heads/main/BananaShell.exe) |
 |-|
 
 ## Compilation & Setup
@@ -70,6 +70,6 @@ gcc BananaShell.c -o BananaShell.exe
 
 ## Preview
 
-![](https://raw.githubusercontent.com/multiverseweb/BananaShell/refs/heads/main/banana.png)
+![](https://raw.githubusercontent.com/tjiuce/BananaShell/refs/heads/main/banana.png)
 
 ---
